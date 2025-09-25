@@ -128,6 +128,10 @@ function mouseClicked(){
   }
 }
 
+function touchEnded(){
+  mouseClicked();
+}
+
 function spinWheel(){
   // wheelSpinStartAngle = wheelAngle;
   wheelSpinEndAngle = random(TAU) + TAU*spinNumber;
